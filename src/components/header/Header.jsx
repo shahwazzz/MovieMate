@@ -47,7 +47,7 @@ const Header = () => {
       navigate(`/search/${query}`);
       setTimeout(() => {
         setShowSearch(false);
-      }, 1000);
+      }, 300);
     }
   };
 
@@ -67,7 +67,9 @@ const Header = () => {
     } else {
       navigate("/explore/tv");
     }
-    setMobileMenu(false);
+    setTimeout(() => {
+      setMobileMenu(false);
+    }, 300);
   };
 
   return (
